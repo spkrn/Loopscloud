@@ -1,0 +1,209 @@
+.audiojs .block {
+	display: block;
+}
+
+
+.play {
+    display:inline-block;
+    margin:5px;
+	height: 100px;
+	background: url(player/img/play.svg) no-repeat;
+	background-repeat:no-repeat;
+	width: 100px;
+}
+.stop {
+    display:inline-block;
+    margin:5px;
+    width: 100px;
+    height: 100px;
+	background: url(player/img/pause.png) no-repeat;
+	background-repeat:no-repeat;
+}
+#progressBar {
+	width: 177px;
+	height: 2px;
+	background: #918c8c;
+	margin-bottom: 10px;
+}
+#progress {
+	width: 0px;
+	height: 2px;
+	background: #ff8500;
+}
+#tape {
+	margin-top: 1px;
+	width: 177px;
+	height: 92px;
+	position: relative;
+	background: url(../../player/img/line.svg);
+	background-repeat: no-repeat;
+	background-position: 17px 48px;
+	zoom:140%;
+}
+
+.teteLecture {	
+	-webkit-transition-property: margin-top;
+	-webkit-transition-duration: 200ms;
+
+}
+
+.playing-head {
+	margin-top: 4px;
+}
+
+@-webkit-keyframes spin {
+	from { -webkit-transform: rotate(0deg); }
+	to { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+	from { -moz-transform: rotate(0deg); }
+	to { -moz-transform: rotate(360deg); }
+}
+@-ms-keyframes spin {
+	from { -ms-transform: rotate(0deg); }
+	to { -ms-transform: rotate(360deg); }
+}
+
+#playingx {	
+
+}
+
+.playingx {	  
+	/* webkit chrome, safari, mobile */
+	-webkit-animation-name: spin; 
+	-webkit-animation-duration: 20s; /* 40 seconds */
+	-webkit-animation-iteration-count: infinite; 
+	-webkit-animation-timing-function: linear;
+
+	/* mozilla ff */
+	-moz-animation-name: spin; 
+	-moz-animation-duration: 20s; /* 40 seconds */
+	-moz-animation-iteration-count: infinite; 
+	-moz-animation-timing-function: linear;
+
+	/* microsoft ie */
+	-ms-animation-name: spin; 
+	-ms-animation-duration: 20s; /* 40 seconds */
+	-ms-animation-iteration-count: infinite; 
+	-ms-animation-timing-function: linear;
+}
+
+#bobine1 {
+	width: 69px;
+	height: 69px;
+	background-image: url(../../player/img/bobine1.svg);
+	background-repeat:no-repeat;
+	display: inline-block;
+}
+
+#bobine2 {
+	width: 69px;
+	height: 69px;
+	display: inline-block;
+	float: right;
+	background-image: url(../../player/img/bobine2.svg);
+	background-repeat:no-repeat;
+}
+
+#teteLecture {
+	width: 52px;
+	height: 15px;
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../../player/img/tete.svg);
+	background-repeat:no-repeat;
+	background-position:0px 4px;
+	-webkit-transition: margin-top 200ms;
+}
+
+
+.title {
+	font-size: 23px;
+	line-height: 25px;
+	font-family: 'lato',sans-serif;
+	color:#666;
+
+}
+.artist {
+	font-size: 30px;
+	font-weight: 100;
+	color: #00CCFF;
+}
+#tapeHeader {
+	font-family: Helvetica Neue, 'Open Sans',sans-serif;
+
+}
+.bpm {
+	display: block;
+	line-height: 1px;
+	font-size: 13px;
+}
+#progressBarWrap {
+	width: 177px;
+	position: relative;
+	font-size: 11px;
+	text-align: right;
+	font-weight: 100;
+}
+#description {
+	margin-top: 35px;
+	margin-bottom: 35px;
+	width: 690px;
+/* 		background: fuchsia; */
+	bottom: 10px;
+}
+#tapeWrap {
+	width: 177px;
+/* 		background: pink; */
+	float: left;
+}
+#tracksWrap {
+	height: 250px;
+	background: #151515;
+	margin-top: 15px;
+}
+.track {
+	width: 76px;
+	height: 250px;
+	text-align: center;
+	padding-top: 15px;
+}
+#volumeSlider {
+	width: 21px;
+	position: relative;
+	height: 140px;
+	background: url(../../player/img/slidervolume.png);
+	z-index: 3;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+
+}
+
+
+#linetape{
+
+height:1px;
+width:248px;
+background-color: #ccc;
+
+}
+
+#tapeall {
+
+overflow: hidden;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0px;
+width: 248px;
+height:190px;
+
+}
+
+.playplay {
+
+position: absolute;
+margin-top: 20px;
+}
+	
