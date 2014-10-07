@@ -29,10 +29,17 @@
       <a id="playingx"><div class="playplay"><audio src="player/sounds/1984.mp3" preload="auto" id="main-player"></audio></div></a>
     </div> 
   </div>
-
-
+  
+  
+   <div id="tapeWrap2">         
+      <div id="tape">
+        <div id="bobine1" class="bobine"></div>
+        <div id="bobine2" class="bobine"></div>
+        <div id="teteLecture"></div>
+      </div>
+      <a id="playingx"><div class="playplay"><audio src="player/sounds/1984.mp3" preload="auto" id="main-player"></audio></div></a>
     </div> 
-
+  </div>
 
     <script src="player/audiojs/audio.min.js"></script> 
     <script src="player/js/main.js"></script>
